@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Best Match!</h1>
+            <hr class="my-4">
+            <div>
+                <p id=resultName></p>
+                <img class="mb-3" id=resultImage>
+            </div>
+            <a class="btn btn-primary btn-lg" href="/" role="button">Go to Home</a>
+        </div>
+        <div>
+            <a href="/api/friends">API Friends List</a>
+            |
+            <a href="https://github.com/nnjh12/FriendFinder">GitHub Repo</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script>
+        $.get("/api/results", function (data) {
+            var bestMatchName = data[data.length - 1].name
+            var bestMatchPhoto = data[data.length - 1].photo
+
+            $("#resultName").html("<h2>" + "Your Best Friend Name : " + bestMatchName + "</h2>")
+            $("#resultImage").attr("src", bestMatchPhoto)
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="surveyContainer">
+            <h1>Survey Questions</h1>
+            <hr>
+
+            <h3>About You</h3>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Name (Required)</label>
+                <input type="text" class="form-control" id="nameInput">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="imageInput">
+            </div>
+            <hr>
+            <div class="form-group">
+                <h3>Question 1</h3>
+                <label for="question">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <select class="custom-select mr-sm-2 answer" id="answer1" data-answerNumber="1">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 2</h3>
+                <label for="question">Generally speaking, you rely more on your experience than your
+                    imagination.</label>
+                <select class="custom-select mr-sm-2 answer" id="answer2" data-answerNumber="2">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 3</h3>
+                <label for="question">You find it easy to stay relaxed and focused even when there is some
+                    pressure.</label>
+                <select class="custom-select mr-sm-2 answer" id="answer3" data-answerNumber="3">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 4</h3>
+                <label for="question">You rarely do something just out of sheer curiosity.
+                </label>
+                <select class="custom-select mr-sm-2 answer" id="answer4" data-answerNumber="4">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 5</h3>
+                <label for="question">People can rarely upset you.
+                </label>
+                <select class="custom-select mr-sm-2 answer" id="answer5" data-answerNumber="5">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 6</h3>
+                <label for="question">It is often difficult for you to relate to other people’s feelings.
+                </label>
+                <select class="custom-select mr-sm-2 answer" id="answer6" data-answerNumber="6">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 7</h3>
+                <label for="question">In a discussion, truth should be more important than people’s sensitivities.
+                </label>
+                <select class="custom-select mr-sm-2 answer" id="answer7" data-answerNumber="7">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 8</h3>
+                <label for="question">You rarely get carried away by fantasies and ideas.
+                </label>
+                <select class="custom-select mr-sm-2 answer" id="answer8" data-answerNumber="8">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 9</h3>
+                <label for="question">You think that everyone’s views should be respected regardless of whether they are
+                    supported by facts or not.
+                </label>
+                <select class="custom-select mr-sm-2 answer" id="answer9" data-answerNumber="9">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 10</h3>
+                <label for="question">You feel more energetic after spending time with a group of people.
+                </label>
+                <select class="custom-select mr-sm-2 answer" id="answer10" data-answerNumber="10">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (strongly agree)</option>
+                </select>
+            </div>
+            <div class="comment"></div>
+            <button class="btn btn-primary btn-lg" type="submit" id="submitButton">Submit</button>
+            <hr>
+            <div class="my-3">
+                <a href="/api/friends">API Friends List</a>
+                |
+                <a href="https://github.com/nnjh12/FriendFinder">GitHub Repo</a>
+            </div>
+        </div>
+        <div class="resultContainer">
+
+        </div>
+    </div>
+
+    <!-- <form action="/" method="POST">
+        <textarea type="text" name="wish"></textarea>
+    
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var answersArray = ["", "", "", "", "", "", "", "", "", ""]
+
+            $("select.answer").change(function () {
+                var selectedAnswer = $(this).children("option:selected").val()
+                var index = $(this).attr("data-answerNumber") - 1
+                answersArray[index] = parseInt(selectedAnswer)
+                console.log(answersArray)
+            })
+            $("#submitButton").on("click", function (event) {
+                event.preventDefault()
+                var myAnswer = {
+                    name: $("#nameInput").val(),
+                    photo: $("#imageInput").val(),
+                    scores: answersArray
+                }
+
+                if (answersArray.includes("") || $("#nameInput").val() === "" || $("#imageInput").val() === "") {
+                    $(".comment").text("Please answer all questions.")
+                } else {
+                    $.post("/api/friends", myAnswer)
+                        .then(function (data) {
+                            console.log(data);
+                        });
+                    $.get("/api/friends", function (data) {
+                        // console.log(data)
+                        // console.log(answersArray)
+                        var currentSumOfDifference = 10000
+                        var sumOfDifference = 0
+                        var bestMatch;
+                        for (var i = 0; i < data.length - 1; i++) {
+                            // console.log(data[i].scores)
+                            sumOfDifference = 0
+                            for (var j = 0; j < data[i].scores.length; j++) {
+                                var difference = data[i].scores[j] - answersArray[j]
+                                if (difference < 0) { difference = difference * -1 }
+                                sumOfDifference += difference
+                            }
+                            // console.log(i + ":" + sumOfDifference)
+                            // console.log(i + ":" + currentSumOfDifference)
+                            if (sumOfDifference < currentSumOfDifference) {
+                                currentSumOfDifference = sumOfDifference
+                                bestMatch = i
+                            }
+                        }
+                        var bestMatchObject = {
+                            name: data[bestMatch].name,
+                            photo: data[bestMatch].photo
+                        } 
+                        $.post("/api/results", bestMatchObject)
+                        .then(function (data) {
+                            console.log(data);
+                        });
+                        // console.log(bestMatch)
+                        // console.log(data[bestMatch].name)
+                        // console.log(data[bestMatch].photo)
+                        window.location.replace("/results")
+                    })
+                }
+
+            })
+        })
+
+    </script>
+
+
+</body>
+
+</html>
